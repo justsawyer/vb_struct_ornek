@@ -42,5 +42,6 @@
         kisi(i).UserB.soyadi = txt_kSoyadi.Text
         kisi(i).UserB.set_KullaniciSifresi(txt_sifre.Text)
         i += 1
+        'abc
     End Sub
 End Class
