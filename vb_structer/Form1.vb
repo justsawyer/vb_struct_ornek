@@ -96,6 +96,7 @@
 
         i += 1
         Temizle()
+        listele()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -178,6 +179,7 @@
         txt_telefon.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString()
         txt_gsm.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString()
         btn_guncelle.Enabled = True
+        btn_sil.Enabled = True
     End Sub
 
     Private Sub btn_guncelle_Click(sender As Object, e As EventArgs) Handles btn_guncelle.Click
@@ -202,6 +204,8 @@
         Next
         listele()
         btn_guncelle.Enabled = False
+        btn_sil.Enabled = False
+        Temizle()
     End Sub
 
     
@@ -227,5 +231,7 @@
         i -= 1
         listele()
         btn_sil.Enabled = False
+        btn_guncelle.Enabled = False
+        Temizle()
     End Sub
 End Class
